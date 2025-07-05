@@ -75,7 +75,7 @@ const BookList = ({ author, title, image }) => {
 const Book = () => {
   return (
     <article className="book container">
-      {API.map((book) => (
+      {API.map((book) => (cx
         <BookList
           author={book.author}
           title={book.title}
