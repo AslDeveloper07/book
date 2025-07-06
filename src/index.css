@@ -10,6 +10,11 @@ body {
     border-radius: 10px;
     overflow: hidden;
 }
+.bookList img{
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
 .book {
   display: flex;
   justify-content: space-between;
