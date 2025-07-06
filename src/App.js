@@ -60,37 +60,31 @@ const API = [
   },
 ];
 
-const BookList = ({author, image, id, title}) => {
-
-    return(
-        <section className="bookList">
-<img src={Image} alt={title} />
-<div className="text">
-
-<h2>{title}</h2>
-<h4>{author}</h4>
-</div>
-        </section>
-    )
+const BookList = ({ author, image, id, title }) => {
+  return (
+    <section className="bookList">
+      <img src={Image} alt={title} />
+      <div className="text">
+        <h2>{title}</h2>
+        <h4>{author}</h4>
+      </div>
+    </section>
+  );
 };
 
 const Book = () => {
-
-    return(
-        <article className="book container">
-
-{
-    API.map((book)=>{
+  return (
+    <article className="book container">
+      {API.map((book) => {
         <BookList
-        author={book.author}
-        title={book.title}
-        image={book.image}
-        key={book.id}
-        />
-    })
-}
-        </article>
-    )
+          author={book.author}
+          title={book.title}
+          image={book.image}
+          key={book.id}
+        />;
+      })}
+    </article>
+  );
 };
 
 const Main = () => {
